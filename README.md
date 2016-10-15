@@ -1,6 +1,6 @@
 # Volgly
 
-**TODO: Add description**
+**Volgly is a tool that help you to improve and follow performance, statistic and good pratices of your site**
 
 ## Installation
 
@@ -21,4 +21,3 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
       [applications: [:volgly]]
     end
     ```
-
