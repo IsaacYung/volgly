@@ -11,7 +11,6 @@ defmodule Volgly.CLI do
                                                 u: :unique,
                                                 p: :pagespeedinsights])
 
-
     case parse do
       {[help: true], _, _} -> :help
       {[unique: true], [url], _} -> %{url: url, options: :unique}
