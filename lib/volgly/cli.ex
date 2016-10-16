@@ -42,13 +42,13 @@ defmodule Volgly.CLI do
       :unique ->  Volgly.PageSpeedInsights.analyse(url, :unique)
       :pagespeedinsights ->  Volgly.PageSpeedInsights.analyse(url)
       [:pagespeedinsights, :unique] ->  Volgly.PageSpeedInsights.analyse(url, :unique)
-      #:w3c ->  Volgly.W3C.analyse(url)
-      #[:w3c, :unique] ->  Volgly.W3C.analyse(url, :unique)
+      # :w3c ->  Volgly.W3C.analyse(url)
+      # [:w3c, :unique] ->  Volgly.W3C.analyse(url, :unique)
     end
   end
 
   def process(%{url: url}) do
     Volgly.PageSpeedInsights.analyse(url)
-    #Volgly.W3C.analyse(url)
+    # Volgly.W3C.analyse(url)
   end
 end
