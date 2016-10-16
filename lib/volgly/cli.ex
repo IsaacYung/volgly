@@ -22,4 +22,34 @@ defmodule Volgly.CLI do
       _ -> :help
     end
   end
+
+  def run(argv) do
+    argv
+    |>parse_args
+    |>process
+  end
+
+  def process(:help) do
+    IO.puts """
+    commands
+    volgly <url>    # Analysis full url bases on <url>/sitemap.xml
+    volgly <url> -p # Analysis only on PageSpeed Insights
+    volgly <url> -u # Analysis just the url informed
+    """
+  end
+
+  def process(%{url: url, options: options}) do
+    case options do
+      :unique ->  Volgly.PageSpeedInsights.analyse(url, :unique)
+      :pagespeedinsights ->  Volgly.PageSpeedInsights.analyse(url)
+      [:pagespeedinsights, :unique] ->  Volgly.PageSpeedInsights.analyse(url, :unique)
+      #:w3c ->  Volgly.W3C.analyse(url)
+      #[:w3c, :unique] ->  Volgly.W3C.analyse(url, :unique)
+    end
+  end
+
+  def process(%{url: url}) do
+    Volgly.PageSpeedInsights.analyse(url)
+    #Volgly.W3C.analyse(url)
+  end
 end
