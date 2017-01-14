@@ -22,4 +22,27 @@ defmodule Volgly.CLI do
       _ -> :help
     end
   end
+
+  def process(:help) do
+    IO.puts """
+
+      usage: volgly <url> <options>
+
+      options:  -u --unique             # Unique url
+                -p --pagespeedinsights  # Make a page speed insights tests
+                -wh --w3chtml           # Valid w3c html
+                -wc --w3ccss            # Valid w3c css
+    """
+    System.halt(0)
+  end
+
+  def process({}) do
+    Volgly.PageSpeedInsights.start()
+  end
+
+  def run(argv) do
+    argv
+    |> parse_args
+    |> process
+  end
 end
