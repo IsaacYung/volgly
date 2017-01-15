@@ -1,4 +1,4 @@
-defmodule CliTest do
+defmodule Volgly.CLITest do
   use ExUnit.Case
   doctest Volgly
 
@@ -19,7 +19,7 @@ defmodule CliTest do
   end
 
   test "option pagespeedinsights with url" do
-    assert parse_args(["http://www.alien-code.com", "-p"]) == %{url: "http://www.alien-code.com", options: [:pagespeedinsights]}
+    assert parse_args(["http://www.alien-code.com", "-ps"]) == %{url: "http://www.alien-code.com", options: [:pagespeedinsights]}
     assert parse_args(["http://www.alien-code.com", "--pagespeedinsights"]) == %{url: "http://www.alien-code.com", options: [:pagespeedinsights]}
   end
 
