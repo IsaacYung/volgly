@@ -9,7 +9,7 @@ defmodule Volgly.CLI do
                                                 pagespeedinsights: :boolean],
                                       aliases: [h: :help,
                                                 u: :unique,
-                                                p: :pagespeedinsights])
+                                                pspeed: :pagespeedinsights])
 
 
     case parse do
