@@ -28,3 +28,9 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
+
+config :maru, Volgly.API.Service,
+    http: [port: 8880]
+
+config :goth,
+  json: "config/cred.json" |> File.read!
