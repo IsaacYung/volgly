@@ -9,7 +9,7 @@ defmodule Volgly.CLI do
                                                 pagespeedinsights: :boolean],
                                       aliases: [h: :help,
                                                 u: :unique,
-                                                pspeed: :pagespeedinsights])
+                                                ps: :pagespeedinsights])
 
     case parse do
       {[help: true], _, _} -> :help
@@ -28,7 +28,7 @@ defmodule Volgly.CLI do
       usage: volgly <url> <options>
 
       options:  -u --unique             # Unique url
-                -pspeed --pagespeedinsights  # Make a page speed insights tests
+                -ps --pagespeedinsights  # Make a page speed insights tests
                 -wh --w3chtml           # Valid w3c html
                 -wc --w3ccss            # Valid w3c css
     """
