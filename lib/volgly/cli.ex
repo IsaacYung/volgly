@@ -28,7 +28,7 @@ defmodule Volgly.CLI do
       usage: volgly <url> <options>
 
       options:  -u --unique             # Unique url
-                -p --pagespeedinsights  # Make a page speed insights tests
+                -pspeed --pagespeedinsights  # Make a page speed insights tests
                 -wh --w3chtml           # Valid w3c html
                 -wc --w3ccss            # Valid w3c css
     """
