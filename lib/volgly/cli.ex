@@ -36,7 +36,7 @@ defmodule Volgly.CLI do
   end
 
   def process({}) do
-    Volgly.PageSpeedInsights.start()
+    Volgly.Tool.PageSpeedInsights.analysis()
   end
 
   def run(argv) do
