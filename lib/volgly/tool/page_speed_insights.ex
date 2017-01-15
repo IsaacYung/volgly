@@ -6,7 +6,7 @@ defmodule Volgly.Tool.PageSpeedInsights do
   # Params for call
   @api_key "AIzaSyCQNoCdB0fDAF7vA0iBwh45FsGfAx2Aq_s"
   @page_speed_url "https://www.googleapis.com/pagespeedonline/v2/runPagespeed?"
-  @timeout 50000
+  @timeout 50_000
 
   def analysis(url, crawl) do
     config([
