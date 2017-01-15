@@ -1,6 +1,6 @@
 defmodule Volgly.CLITest do
   use ExUnit.Case
-  doctest Volgly
+  doctest Volgly.CLI
 
   import Volgly.CLI, only: [parse_args: 1]
 

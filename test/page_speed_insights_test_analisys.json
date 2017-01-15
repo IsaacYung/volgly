@@ -1,0 +1,419 @@
+{
+ "kind": "pagespeedonline#result",
+ "id": "http://www.pudim.com.br/",
+ "responseCode": 200,
+ "title": "Pudim",
+ "ruleGroups": {
+  "SPEED": {
+   "score": 90
+  },
+  "USABILITY": {
+   "score": 67
+  }
+ },
+ "pageStats": {
+  "numberResources": 5,
+  "numberHosts": 2,
+  "totalRequestBytes": "488",
+  "numberStaticResources": 3,
+  "htmlResponseBytes": "1144",
+  "cssResponseBytes": "718",
+  "imageResponseBytes": "28221",
+  "javascriptResponseBytes": "28220",
+  "numberJsResources": 1,
+  "numberCssResources": 1
+ },
+ "formattedResults": {
+  "locale": "pt_BR",
+  "ruleResults": {
+   "AvoidLandingPageRedirects": {
+    "localizedRuleName": "Evitar redirecionamentos da página de destino",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Sua página não tem redirecionamentos. Saiba mais sobre {{BEGIN_LINK}}como evitar os redirecionamentos da página de destino{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/AvoidRedirects"
+      }
+     ]
+    }
+   },
+   "AvoidPlugins": {
+    "localizedRuleName": "Evitar plug-ins",
+    "ruleImpact": 0.0,
+    "groups": [
+     "USABILITY"
+    ],
+    "summary": {
+     "format": "Parece que sua página não usa plug-ins, o que previne o uso de conteúdos em muitas plataformas. Saiba mais sobre a importância de {{BEGIN_LINK}}evitar plug-ins{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/AvoidPlugins"
+      }
+     ]
+    }
+   },
+   "ConfigureViewport": {
+    "localizedRuleName": "Configure o visor",
+    "ruleImpact": 10.0,
+    "groups": [
+     "USABILITY"
+    ],
+    "summary": {
+     "format": "Não há um visor especificado para sua página. Isso faz com que os dispositivos móveis processem sua página da mesma forma que ela apareceria em uma navegador da área de trabalho, diminuindo seu tamanho para caber em uma tela de dispositivo móvel. Configure um visor para permitir que sua página seja processada de forma adequada em todos os dispositivos."
+    },
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "{{BEGIN_LINK}}Configure um visor{{END_LINK}} para esta página.",
+       "args": [
+        {
+         "type": "HYPERLINK",
+         "key": "LINK",
+         "value": "https://developers.google.com/speed/docs/insights/ConfigureViewport"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "EnableGzipCompression": {
+    "localizedRuleName": "Ativar compactação",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Você ativou a compactação. Saiba mais sobre {{BEGIN_LINK}}como ativar a compactação{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/EnableCompression"
+      }
+     ]
+    }
+   },
+   "LeverageBrowserCaching": {
+    "localizedRuleName": "Aproveitar cache do navegador",
+    "ruleImpact": 1.5,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "A definição de uma data de validade ou de uma idade máxima nos cabeçalhos de HTTP para recursos estáticos instrui o navegador a carregar os recursos transferidos anteriormente a partir do disco local e não por meio da rede."
+    },
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "{{BEGIN_LINK}}Aproveite o cache do navegador{{END_LINK}} para os seguintes recursos que podem ser armazenados em cache:",
+       "args": [
+        {
+         "type": "HYPERLINK",
+         "key": "LINK",
+         "value": "https://developers.google.com/speed/docs/insights/LeverageBrowserCaching"
+        }
+       ]
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "{{URL}} (expiração não especificada)",
+         "args": [
+          {
+           "type": "URL",
+           "key": "URL",
+           "value": "http://www.pudim.com.br/estilo.css"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "{{URL}} (expiração não especificada)",
+         "args": [
+          {
+           "type": "URL",
+           "key": "URL",
+           "value": "http://www.pudim.com.br/pudim.jpg"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "MainResourceServerResponseTime": {
+    "localizedRuleName": "Reduzir o tempo de resposta do servidor",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Seu servidor respondeu rapidamente. Saiba mais sobre a {{BEGIN_LINK}}otimização do tempo de resposta do servidor{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/Server"
+      }
+     ]
+    }
+   },
+   "MinifyCss": {
+    "localizedRuleName": "Compactar CSS",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Sua CSS está reduzida. Saiba mais sobre {{BEGIN_LINK}}como reduzir a CSS{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+      }
+     ]
+    }
+   },
+   "MinifyHTML": {
+    "localizedRuleName": "Compactar HTML",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Seu HTML está reduzido. Saiba mais sobre {{BEGIN_LINK}}como reduzir o HTMLl{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+      }
+     ]
+    }
+   },
+   "MinifyJavaScript": {
+    "localizedRuleName": "Compactar JavaScript",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Seu conteúdo JavaScript está reduzido. Saiba mais sobre {{BEGIN_LINK}}como reduzir o JavaScript{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+      }
+     ]
+    }
+   },
+   "MinimizeRenderBlockingResources": {
+    "localizedRuleName": "Eliminar JavaScript e CSS de bloqueio de renderização no conteúdo acima da borda",
+    "ruleImpact": 8.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Sua página tem {{NUM_CSS}} recursos de CSS de bloqueio. Isso causa um atraso na renderização de sua página.",
+     "args": [
+      {
+       "type": "INT_LITERAL",
+       "key": "NUM_CSS",
+       "value": "1"
+      }
+     ]
+    },
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "Nenhuma parte do conteúdo acima da dobra em sua página seria renderizado sem aguardar o carregamento dos seguintes recursos. Tente adiar ou carregar de maneira assíncrona os recursos de bloqueio, ou incorpore in-line as partes fundamentais desses recursos diretamente ao HTML."
+      }
+     },
+     {
+      "header": {
+       "format": "{{BEGIN_LINK}}Otimize a exibição de CSS{{END_LINK}} dos seguintes itens:",
+       "args": [
+        {
+         "type": "HYPERLINK",
+         "key": "LINK",
+         "value": "https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery"
+        }
+       ]
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "{{URL}}",
+         "args": [
+          {
+           "type": "URL",
+           "key": "URL",
+           "value": "http://www.pudim.com.br/estilo.css"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "OptimizeImages": {
+    "localizedRuleName": "Otimizar imagens",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Suas imagens estão otimizadas. Saiba mais sobre {{BEGIN_LINK}}como otimizar as imagens{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/OptimizeImages"
+      }
+     ]
+    }
+   },
+   "PrioritizeVisibleContent": {
+    "localizedRuleName": "Priorizar o conteúdo visível",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Você tem conteúdo acima da dobra com a prioridade correta. Saiba mais sobre {{BEGIN_LINK}}como priorizar o conteúdo visível{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent"
+      }
+     ]
+    }
+   },
+   "SizeContentToViewport": {
+    "localizedRuleName": "Dimensionar o conteúdo para se ajustar à janela de visualização",
+    "ruleImpact": 0.0,
+    "groups": [
+     "USABILITY"
+    ],
+    "summary": {
+     "format": "Os conteúdos da sua página se ajustam à janela de visualização. Saiba mais sobre {{BEGIN_LINK}}como dimensionar o conteúdo para se ajustar à janela de visualização{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/SizeContentToViewport"
+      }
+     ]
+    }
+   },
+   "SizeTapTargetsAppropriately": {
+    "localizedRuleName": "Tamanho apropriado dos pontos de toque",
+    "ruleImpact": 0.0,
+    "groups": [
+     "USABILITY"
+    ],
+    "summary": {
+     "format": "Todos os links/botões da sua página são grandes o suficiente para que um usuário toque com facilidade no touchscreen. Saiba mais sobre o {{BEGIN_LINK}}tamanho apropriado dos pontos de toque{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/SizeTapTargetsAppropriately"
+      }
+     ]
+    }
+   },
+   "UseLegibleFontSizes": {
+    "localizedRuleName": "Use tamanhos de fonte legíveis",
+    "ruleImpact": 40.0,
+    "groups": [
+     "USABILITY"
+    ],
+    "summary": {
+     "format": "A maneira que o seguinte texto na sua página é processado dificulta a leitura de alguns visitantes. {{BEGIN_LINK}}Use tamanhos de fonte legíveis{{END_LINK}} para fornecer uma melhor experiência do usuário.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/UseLegibleFontSizes"
+      }
+     ]
+    },
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "Os seguintes fragmentos de texto têm tamanhos pequenos de fonte. Aumente o tamanho da fonte para tornar os fragmentos legíveis."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "{{TEXT_SNIPPET}} é processado com somente {{HEIGHT}} pixels de altura ({{CSS_HEIGHT}} pixels em CSS) {{SCREENSHOT}}.",
+         "args": [
+          {
+           "type": "STRING_LITERAL",
+           "key": "TEXT_SNIPPET",
+           "value": "pudim@pudim.com.br"
+          },
+          {
+           "type": "INT_LITERAL",
+           "key": "HEIGHT",
+           "value": "4"
+          },
+          {
+           "type": "INT_LITERAL",
+           "key": "CSS_HEIGHT",
+           "value": "11"
+          },
+          {
+           "type": "SNAPSHOT_RECT",
+           "key": "SCREENSHOT",
+           "value": "final",
+           "rects": [
+            {
+             "left": 165,
+             "top": 525,
+             "width": 124,
+             "height": 13
+            }
+           ]
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "version": {
+  "major": 1,
+  "minor": 15
+ },
+ "screenshot": {
+  "mime_type": "image/jpeg",
+  "data": "_9j_4AAQSkZJRgABAQAAAQABAAD_2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj_2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj_wAARCAI4AUADASIAAhEBAxEB_8QAHQABAAICAwEBAAAAAAAAAAAAAAMEAgYBBQgHCf_EAE4QAAIBAgMEBgUGCQkHBQAAAAABAgMRBAUhBhIxQTQ1UXJzsQcTImFxFzKBlLPSCBUWI1JVkbLRFBg3QkWDk6HhJCUmM2SCwWJjdISj_8QAGQEBAAMBAQAAAAAAAAAAAAAAAAECAwQF_8QAIhEBAQACAgIDAQEBAQAAAAAAAAECEQMSITETQVEEMkJh_9oADAMBAAIRAxEAPwD7WAABJhuk0e_HzIyTDdJo9-PmBvQAAArZljaWX4KrisRveqpq8t1XfGx0MttspiryeIS8L_Utjhll5kVueOPutnBrEdtspkrr-Ur40v8AU5_LXKb2viP8L_Ut8Wf4j5MP1swNZ_LXKbN3xFlx_Nf6nK20yt_N_lL-FL_UfFn-HyYfrZQajmnpCyHK8FVxWPrVaNGmrtyp8fclfV-40p_hFbDp2vmz_wDpP-JF48p7iZnjl4lfYwfG_wCcXsP25t9Sf8TlfhE7D9ubfUn_ABK6q-q-xg-O_wA4jYjtzb6m_wCI_nEbEW45t9Tf8SDrX2IHx3-cTsR25t9Tf8QvwiNiG7L8bN__AAn_ABB1r7ED5HT_AAgNjKk1FfjVSauk8G1_5MP5wmxO-4ylmito28G7eY0ar6-D5FR_CC2LrVFCH41u-bwTS8yer6dtkKdRwtmknw9nCXT_AMydU0-rA-TS9Pex0EvWLNYPseDf8Tmn6etjqkpKLzO8eP8Asj_iNGq-sA-TT9PexsG1fM212YS__kry_CH2Ji2pfjZNduCf8Rqmq-wg-Pr8IbYlq981SfC-Dev-Yj-ENsRKN97NFrazwb_iNVD7AD4-vwhtiXwea_U3_E5j-EJsVLg81-nBv-JPWj6-D5Xlvp02RzDMcJgsP-M_X4qtChT3sI0t6UlFXd9Fdn1Qiyz2AAIGlZp1lifEZWLOadZYnxGVgAAAAAASYbpNHvx8yMkw3SaPfj5gb0AAOi24k47LZg423txWv3kfH01v70pb0-18vgfX9u3bZPMbfoR_eR8bW8pc7-87f5v81x_0f6WqNRvV8G7IlcnvWduJBTTShd8yeL3Y8G3-kb2uZlx4y3Y9jIsRiqeHoVa0mqdKmnOUr8EiPEYmNNNyavx1Pl_pX2oSwSyrDTe_Ve9Ua_R5IrllInGXK6jS9vdqsTtLmk5b8o4Km2qNK-iXb8Watp8TJNMcmcnJn2r0eLjmEcJXsZJanEHZkiXvMq6I45nDfaZW5mMVvS3e0qs4hCVSfs_NLMnTw0Va0pNcew4nG0VTptxknqzLDYWLqa8XzZO1fKxQpzrvfrRjBSV4tIvRwkIWlFKV9VcxoxdJpRelrX9xeo-zCTVNNcXvPiR2XmLGpTUsHGnKk5VL-zJWsjnL8KqcIayjd-18TOVeNFRnLebXC3AneM9c95uPYk48UOydMqtO0JQa3uyXaddCnFNKMN1qe879nYdtPexFJ06kYW43S8jGjg6VOL3aim3w3u0jsiz9dPWwEqc5ypVNGm7PgvgUMXR3opSs15Gy4qEFSilZzTaaXZ2HU16U52pQhana95aWuT2Rp0Eqe7TaTbs9OwxipRft6acDs8Zg6lCmm9E-F_MpT3fUJv56dr9paXbOzSGU0paO5YpONuOvK5TppqTcmteZM3LdurOJfGq1s-wzf5Z7PXtb8Y4bh4sT30jwLsJJPbLZ5X1_GGG0_vYnvpEcisAAZpaVmnWWJ8RlYs5p1lifEZWAAAAAABJhuk0e_HzIyTDdJo9-PmBvQAA6HbvXZPMe5H95Hx-Orkk7W5PmfYdudNlMwf8A6I_vI-M1asYJv-txR2fz_wCXH_R_pNvqFt5lLFZhClFu6t8Slj8wVNXk-KNLzrNXNSSlZDl5pgxw47nXY53n3FQlblxPj-f42eNzatVlfjZX7EbNi8RKo-N_gaVi5t4io3dav6Dkxyud3XoY8E44zgzLmyGMn26md2rby4l7GkumaSu9CRcL2Ik3e_Azi9FcpV5WT15mEL7_AGe8kX-RhPX4cwmplUm5rRXT4l-lHf15lGjUUpcEmztqCslwIyMIs0MNUbTaTjY7FUl6rdcdV9FifLKaqrXgkXcyqRp4VzUYWp-zdcTG27a2yKNHLVKO9OSUXzZxWwrpXW6pa_OuUXntON6bdR-6xzHP6FOlecXKT4e5FumV8q91uEWpre-bwSQVBQlreMm_j-0rYTMqONm_6tuTfE7irXpzqRp6JJceK-kWWHbaLC0KEq6ji5SirNJpczOeXqtanSe9VjpFy7EZU16qpGc37CaduJawGJprFVq-sW9I_TxK3auV06DaGk6VCbm04vRNrU0rES3KdrXcnexs21GZ08ViJU6b_Np3c3zZqlWbrVd6NrdhthjqeWVy2yjHg3qL7kmmkcJOKVnbkSRg5TW9q-BpFWx7DqMtsdnHrf8AGOGs_wC9ifoAjwDsNFLbTZ1clmOG-1ie_kRmiAAKJaVmnWWJ8RlYs5p1lifEZWAAAAAABJhuk0e_HzIyTDdJo9-PmBvQAA6Db17uyOZPshH95HwbH4qNPeldH3P0jyUNis1k-Cpx_fieYM9zBOUlF2txsb4cnTCuXmxuWcirnWZuo2k7o1fE13N2buS4utdvUoVJ82cltyu67eHimMc33m229DX80pfnNFr29p3lH2pSk-C4LtKGY0pSW_8A1eFjXDwvyfjpoxsSLS1xOLja6duTMG9S7PSRO_DtMrkUXr7yS10Vq0qVa6nMkmrEaTi9eBkrkLCtBXdrrtLmFxdSGko78StCi6stNTt8FljqNey2yLZ9klWqWZ-qptwjJacPeU6tbEYmpNyclGWrR3lDIpSi5SWvIr4vAzw13xUeJTtF8bLfLrYYeMVw9oyeGjJ6x1M9_edlZfE5VTT2tSWviKk6EqTvRm4t9hnhcZWpYhKtUfq0tbomk97n79Dq8yqTjLcg7aasmfiuWM1tsazjDxw7c5tTS-bFcTpMfn1at-aheFN6Pd4tHUW4WbuErSelr6FpJHNlbWNSrOvuqbvGKaVzmCtcySTVua1MnHt0LbV04jHe1XzufuLWHjuxuQwfJ89LlhPdjZ8UWg7zYl_8a7Paf2jhvtYnvxHgHYdt7bbPa_2jhvtYnv5Fc0AAKDSs06yxPiMrFnNOssT4jKwAAAAAAJMN0mj34-ZGSYbpNHvx8wN6AAGo-lqfq_R3nU-ylH9-J5Ex-Ik5u7vrxPWvpmlu-jPPWuVKP2kTx9iZ3cimV-jHHeW1WpPeevD3ENS6TZm1K_uI5t8CI65NM8LBqLlvK8tEc4hRcFFq6erJcCr0ZOPzk-PYQtNNtrRczXG6ZZzbqcXhpReqa7GUasHC6kmmmd5iH6xJN3ir2KcqanFqa1fM09s3UxluzvxLEJp_ElqYKSleMdPcZ08JKWsuLK0ku2MIb1ubL-GwDm02n8C3luXTnJKMePM3PKsojThFzimzK5fi_r26HK8llUkm42ibfl-VQpRXsov4fDRglZF6nTSRnd1nlybVVhIqGiR02e5f67B1oQVpWuvijaHFKOp1OaVYxhJ8EhpSZV8qmmp2kmpLQbyd7DHV1UxlWaXzpNr4Ebqx3UnFKRo65luJd-3vOsx3tYmT1t79DssLKl_KYeua3Em_jodTXbdRtvmTIZZb8IZ7qd43WulziL10uZVIXXAxowdu0uxSJO601ZIlpx17Gcbmt720M1JJJ6OwCmrXctezQyu3x0SMHUSempDUqtrjZFoq2HYmovy32dSfHMsN9rE_QNH547Byb272dsv7Sw32sT9DkRmgABQaVmnWWJ8RlYs5p1lifEZWAAAAAABJhuk0e_HzIyTDdJo9-PmBvQAA0j01_wBF-f8Agw-0ieOqzbbPYfpu_ot2g8GH2kDxzLec2raFcmvH7cLVcdSOrqiSPF6XI56rXiQ3SYB7ladPeumroncY3cZa3fYdYqjpV4yT4PU7eTU0mnpxuX_9Z32p4igo_N-aUK8JJRjeylrqdzVg5pRvxfF8CjLDynWtUi91X1toWlVuKq41aak4_Na58EMrU6tWN46PTU7PdcqKp2W6tH7y1lWFc8X7KtBPsIyy8ExbJlGDjGCbSubBRglaxSwdPditLF-LstDFjnd1PFEm-o8CupHX5lmdLC0pSnNIbU0uYzFxhFuTt8TS8-zqM4zpUXrK8d7kjrM5zuvjZyhQvGHC51aozlFOo2y2te22HFb7V5xW87Su7EFSF-BcVNwfC6XH3io1Nq8FFLjYnbo66VKNO-9KWu6myruri2ld82dhV3byhCVoW424nXYhxWjenD4lsZtnldMJTbbS1jbj7xByWtvZMVK1k4yu-xGXt2V4NLk2X0y2ynJNWbscXi9Iu_8A5EqaVnvLeXLiPUb0Vd2XYuwnwjyjndN3XxS5hUpXXJNO1yzNuMd7c9m1k3wM_UynNppKXFWI3o1a7PYWmltzs7JP-0sL9rE_QhHgfYbByW2Wz0p8PxhhmmvdVie-EVt2WaAAQhpWadZYnxGVizmnWWJ8RlYAAAAAAEmG6TR78fMjJMN0mj34-YG9AADRvTdp6LdoPCh9pA8dTacnbQ9i-m_-izaDwYfaQPG843lvPtK1px1k17JC1OWsbWJmnu6CMN12XAh0RRnSlrvFzLaqacKl95cDmpTv9JVrXpyVSN1bsLS_SMsfx3DUYfPV1cuZHVjUqYrB1rKlV_5cux8jrsNiI4ikoVdG1zON1wqy3brdafwJZWdklGFWGLrUa69uDtfkzZMsw6gr2OkwtR1KznUSdST1Nlw1o00yl8oy8TTsKeiVkZyqxgtWdXUxjbtH2bcTV8zzmvVqTp0p21sR7ZTC1sWbZ9Tw0XCm96pyRrOJqrHwdXFV2pa2hHjcoxozrO9Vtu3NliGHUeC_yG5HRhw6R0qS42JJRstDK0orVIxlKab5K5G28ljCkqPrF65y3PcVMXGlvy9S_Zvo2TTjK3u4laqnfXkTFbKipUozhVbklJWtfsIHRSb3nFJrlxZdwVPfnVe7veycOjHe9uMVrrpwLys8sduuVOSu6jlblZ8iSlQ9bOSjCUopezZ8DtLU3JtW3ZL5ltLfEktTVJ7sXvx1vHRfAnanV08KEqlenThGEJJauXYSxoqjXp-tj6z2r29xcwsoty9bTtKz4Lg_cSSpqLe642VtOLeg2aVqOG9VJqekVq1JcL8l7zOpHjuJWirJ8CfhvSbvvPRsydTfjuRSVuditq0mna7GVF-WOQKlFRi8ww17-JE91I8MbFU77YZFJpJLMMP9rE9zomM-QABLNpWadZYnxGVizmnWWJ8RlYAAAAAAEmG6TR78fMjJMN0mj34-YG9AADR_Tcr-i3P_AAofaQPHNZWnbX6T2R6aY73oxz5LnSh9pE8eYuLjolZ37CuS2F1UMV23ZJa6TS4EV32okjJJWbX0FXTKOS95DWSdyV-56Ebg29dEFvKSWHovCKr61qrFau_-RnhMVCTj6y6vx95Vlh97tI1SlTaa0-jQtMozuF3t3-H9XTn6yT0JMXnMaUG4JpJfSdLGu1G0Yu9tFfREcKE6jvUvqyfEOnb27eljq-KjGjht11J_tIq2TVsG4yrRW9N8E7leFOdCpCrS0nGV0bHgcwqZnnOHUqSjGEW7cdStuy43H1HTui6U92cXF9jRna_uO62pw1Tcni5OPs2VrmuQq-zrNO_Iz1b5aYcm08tV7yCpH2Xa1_eWKtOUKManstS4WKr1vZkNJlL6Q1Yt82irPS97FibavcrTVk_2loip8tqb9SVJpJKLd-0zq4aEm76-5aalfK3_ALY48bxZ2bv6xSlLdfa-RdmqRUd32rxlb2V2MRapxtNKUnr8CaapKcrT9Zpe75MgahGcqk43la7SGlNuKrVSc6s2k92yUVYzp0aagru7ktUuREo0pYeKnF7zbe6uNuQjJtweqja1ratE6RtNOEJKUruMNLdhxBRimpNcdL8bGNafrLQVOUra-1pb3mEN2PzpXsrJkErutjlD8s8h3W7fjDD3j_eRPc6PCOx-Jj-W2QRi7ylmOHu_72J7uRaM8wAEs2lZp1lifEZWLOadZYnxGVgAAAAAASYbpNHvx8yMkw3SaPfj5gb0AANN9MUZS9G2eRj850o2_wASJ5Fr0pKTUlqev_Swr-j3OU3b81HX_vieUMdQSk1wlz5i47jPLLrk6KULN6fSRRuua0LdeDjFxXEruDsl5GXp1YZ7ZQTaaaX0GTsorSzOIrdV2ZJXTVx7bSuHqtGzhRWl7McJKKZg6qjO_ILbSRppN7sU3xJ6fBXKvrVN3jfQmpX471yNJlWJR9nREcJVaE3OjJxla10cxqpNp3bOd6OruyPP0nwjrVMRVjatOUl72Qeqas48S05xdtGuRjJXv2MW0kk9I1wjvSdlotTOG72Kxi6b-BlFNaWF8k8MKkN7ha3u5lGvDVu2p2jil_oV6tNSWnH3kRKllcWswhfsf0HY1fnatbjdjrlv4euqsVfd5dpfqVKVSiqsam62vmvtNGV8I69mpRppKUtE1yMXh3pKU4uXCyRxBud7Jy7NDmVRQ1lZLhqy2qztkSSoRjNKEl6ztXJkKqRhvKXJcmQVsUm_Y424RRHac7NpJP36k9de0b_ElXEudRpNauyvzJ1gfXUm99plOnQ3ajmr3TumdpGqlH2VZtakbiLMvpa2HwkaW2mRp2c1j8O7_wB5E91o8O7Gq-2GRy3tXj8Pf_Fie4kMVc_oABZm0rNOssT4jKxZzTrLE-IysAAAAAACTDdJo9-PmRkmG6TR78fMDegABqPpa_o9znh_y4cfEieYswpeup2XsvienfS0r-jzOle35uOv_fE8xTlaUr1HGPJP-t9PYa8c8Ofl_wBOnxNCSbi7fEoSptKV-PYbDOFSrD86oq64rgddisM4pK2luKMs-P8AE4cmr5dZb2VZ_ExbcUrElaE1JWehglwXLsMb4duGe2Ld7t8yCrB30JpK0tLiSTfzlclrKjpQ3Y-8mpycbJLS5xxTWvuZxvKDSlvfEJSuaUvaQVnG0efYV6s1JrcRNTbUVvPkNJmSVWStpY4crXenuDmrbsbLTiYO5VbbOEm58NDlayba-kjtJfNdkRynUV0tQJ03vO0vZ4WIaspXXEww_rFN30T5E843XvHo2h3U1yaInh5Qd4NLs0RapQ3b6aPiZtIb16RfPtTvXUWqlScovgk7GGGw963BNF6bW7azZX9Y6c1Yt3t9q3GfTnE4OMaiSs3zSHqVGDUtI8TmGIs23F3txM3WjUtGUWm9NB5Vnj2iVaktFGUjOm41b-y00JYeKcnCfwRLSp7iu-fEim3ZbI4fe2vyFtv2cww7X-LE9wo8T7HJLa_Jbcf5fh-X_uRPbCLcdY8nsABozaVmnWWJ8RlYs5p1lifEZWAAAAAABJhuk0e_HzIyTDdJo9-PmBvQAA1H0sf0e5zd2Xq4_vxPNMoqaSSg0uaZ6u2rhl9TIMZDOaTq4CUUqsFKza3lbW6525nzyeU7AxrxhSyitNWd2q81ZppWs5_H9h1cHHnljvHG1hy4XK-K-GTjKFJJVmow1UZcX7rnO566jeavve-9z7U8t9H9TG1MJVyOsoJQe88RJ3ck3a3rPc-0mjlGwLrSVLJq04RS3ZRxEle_uc1bl-01v83NP-KznHf158xeEcNUrr3Rt9BQlSWulj0zicg9H1OtKCyudeS4OGIk09F21Pf_AJMxw2x_o-xeYUsJTyW86sYyTWKno3e8Ze3o1blfirHPl_Lya7da1w7Y_bzEo-01K7I4wXLmevH6Jdim7vJU7_8AUVfvHHyR7E_qVfWav3jk6V0452e3kjccddLW5iUd5XtY9b_JHsTr_uVa_wDU1fvD5I9ibdSr6xV-8R0rScseRvVp6cDGdlJXTaPXa9EexKfUq-s1fvB-iPYl8clX1ir94nrU_LHkFQlvpxTSJ4Qle7vc9b_JJsTp_uVaf9TV-8c_JLsV-pV9Yq_eFxtPlxeSVe2ivrzMGmpXi1fmeufkk2K_Uq-s1fvGPyQ7ELhkkfrFX7xHSnzR5Ld3HX6Qk3HXi-R61-STYn9Sr6zV-8Pkk2J_Uq-sVfvDpT5sXkpK-tjPdtd8z1mvRLsUuGSr6xV-8c_JNsV-pl9Yq_eI6U-aPI7V-PAgrYZvWHHsPXz9EmxT45KvrFX7wXok2KX9ir6zV-8Pjp80ePo0ZJq6fvJYUteFteFj158kuxX6lX1ir94fJLsV-pV9Yq_eLdckfLHkr1Tae67EkYcLp3PWXyTbFfqZfWKv3jn5J9i_1MvrFX7xHSo-WPMex8W9rcksnZY-g_8A9IntVGl4P0X7IYPF0MTh8oUK1GpGrTl_KKrtKLun87tRuhbDGz2zyy2AAuq0rNOssT4jKxZzTrLE-IysAAAAAACTDdJo9-PmRkmG6TR78fMDegAAauY7kf0V-wyAGO5H9FfsDhF8Yr9hkBsY7kf0Y_sOVCK4RX7DkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaVmnWWJ8RlYs5p1lifEZWAAAAAABJhuk0e_HzIyTDdJo9-PmBvQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0rNOssT4jKxZzTrLE-IysAAAAAACTDdJo9-PmRkmG6TR78fMDegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABpWadZYnxGVizmnWWJ8RlYAAAAAAEmG6TR78fMjJMN0mj34-YG9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADSs06yxPiMrFnNOssT4jKwAAAAAAJMN0mj34-ZGSYbpNHvx8wN6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGlZp1lifEZWLOadZYnxGVgAAAAAASYbpNHvx8yMkw3SaPfj5gb0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANKzTrLE-IysWc06yxPiMrAAAAAAAkw3SaPfj5kZJhuk0e_HzA3oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaVmnWWJ8RlYs5p1lifEZWAAAAAABJhuk0e_HzIyTDdJo9-PmBvQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0rNOssT4jKxZzTrLE-IysAAAAAACTDdJo9-PmRkmG6TR78fMDegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABpWadZYnxGVizmnWWJ8RlYAAAAAAEmG6TR78fMjJMN0mj34-YG9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADSs06yxPiMrFnNOssT4jKwAAAAAAJMN0mj34-ZGSYbpNHvx8wN6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGlZp1lifEZWLOadZYnxGVgAAAAAASYbpNHvx8yMkw3SaPfj5gb0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANKzTrLE-IysWc06yxPiMrAAAAAAAkw3SaPfj5kZJhuk0e_HzA3oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaVmnWWJ8RlYs5p1lifEZWAAAAAABJhuk0e_HzIyTDdJo9-PmBvQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0rNOssT4jKxZzTrLE-IysAAAAAACTDdJo9-PmRkmG6TR78fMDegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABpWadZYnxGVizmnWWJ8RlYAAAAAAEmG6TR78fMjJMN0mj34-YG9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADSs06yxPiMrFnNOssT4jKwAAAAAAJMN0mj34-ZGSYbpNHvx8wN6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGlZp1lifEZWLOadZYnxGVgAAAAAASYbpNHvx8yMkw3SaPfj5gb0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANKzTrLE-IysWc06yxPiMrAAAAAAAkw3SaPfj5kZJhuk0e_HzA3oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaVmnWWJ8RlYs5p1lifEZWAAAAAABJhuk0e_HzIyTDdJo9-PmBvQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0rNOssT4jKxZzTrLE-IysAAAAAACTDdJo9-PmRkmG6TR78fMDegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABpWadZYnxGVizmnWWJ8RlYAAAAAAEmG6TR78fMjJMN0mj34-YG9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADSs06yxPiMrFnNOssT4jKwAAAAAAJMN0mj34-ZGSYbpNHvx8wN6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGlZp1lifEZWLOadZYnxGVgAAAAAASYbpNHvx8yMkw3SaPfj5gb0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANKzTrLE-IysWc06yxPiMrAAAAAAAkw3SaPfj5gAb0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANKzTrLE-IysAAAAH_9k=",
+  "width": 320,
+  "height": 568,
+  "page_rect": {
+   "left": 0,
+   "top": 0,
+   "width": 980,
+   "height": 1741
+  }
+ }
+}
