@@ -14,13 +14,13 @@ defmodule CliTest do
   end
 
   test "option unique with url" do
-    assert parse_args(["http://www.alien-code.com", "-u"]) == %{url: "http://www.alien-code.com", options: :unique}
-    assert parse_args(["http://www.alien-code.com", "--unique"]) == %{url: "http://www.alien-code.com", options: :unique}
+    assert parse_args(["http://www.alien-code.com", "-u"]) == %{url: "http://www.alien-code.com", options: [:unique]}
+    assert parse_args(["http://www.alien-code.com", "--unique"]) == %{url: "http://www.alien-code.com", options: [:unique]}
   end
 
   test "option pagespeedinsights with url" do
-    assert parse_args(["http://www.alien-code.com", "-p"]) == %{url: "http://www.alien-code.com", options: :pagespeedinsights}
-    assert parse_args(["http://www.alien-code.com", "--pagespeedinsights"]) == %{url: "http://www.alien-code.com", options: :pagespeedinsights}
+    assert parse_args(["http://www.alien-code.com", "-p"]) == %{url: "http://www.alien-code.com", options: [:pagespeedinsights]}
+    assert parse_args(["http://www.alien-code.com", "--pagespeedinsights"]) == %{url: "http://www.alien-code.com", options: [:pagespeedinsights]}
   end
 
   test "two options with url" do

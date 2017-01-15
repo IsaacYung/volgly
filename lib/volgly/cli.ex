@@ -13,8 +13,8 @@ defmodule Volgly.CLI do
 
     case parse do
       {[help: true], _, _} -> :help
-      {[unique: true], [url], _} -> %{url: url, options: :unique}
-      {[pagespeedinsights: true], [url], _} -> %{url: url, options: :pagespeedinsights}
+      {[unique: true], [url], _} -> %{url: url, options: [:unique]}
+      {[pagespeedinsights: true], [url], _} -> %{url: url, options: [:pagespeedinsights]}
       {[pagespeedinsights: true, unique: true], [url], _} -> %{url: url, options: [:pagespeedinsights, :unique]}
       {[unique: true, pagespeedinsights: true], [url], _} -> %{url: url, options: [:pagespeedinsights, :unique]}
       {_, [url], _} -> %{url: url}
@@ -35,8 +35,11 @@ defmodule Volgly.CLI do
     System.halt(0)
   end
 
-  def process({}) do
-    Volgly.Tool.PageSpeedInsights.analysis()
+  def process(%{url: url, options: options}) do
+    case options do
+      [:pagespeedinsights] -> Volgly.Tool.PageSpeedInsights.analysis(url)
+      [:pagespeedinsights, :unique] -> Volgly.Tool.PageSpeedInsights.analysis(url, :unique)
+    end
   end
 
   def run(argv) do

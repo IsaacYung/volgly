@@ -33,4 +33,4 @@ config :maru, Volgly.API.Service,
     http: [port: 8880]
 
 config :goth,
-  json: "/home/isaac/Workspace/volgly/config/cred.json" |> File.read!
+  json: "config/cred.json" |> File.read!
