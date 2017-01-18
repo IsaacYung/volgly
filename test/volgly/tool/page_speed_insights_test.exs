@@ -9,6 +9,6 @@ defmodule Volgly.Tool.PageSpeedInsightsTest do
   end
 
   test "page speed insights json returned", state do
-    assert PageSpeedInsights.analysis("http://ftp.br.debian.org/debian/") == state[:json_test]
+    assert PageSpeedInsights.analysis("https://www.googleapis.com/auth/pubsub") == state[:json_test]
   end
 end
