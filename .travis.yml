@@ -1,5 +1,4 @@
 language: elixir
 elixir:
   - 1.3.2
-env:
-- CRED_OAUTH2='{"installed":{"client_id":"41555837305-flerkrdjpg4is37mhs5n9ifsa8hitvo2.apps.googleusercontent.com","project_id":"volgly-155716","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://accounts.google.com/o/oauth2/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"DvAsGi8qWy0UCMBVX55ofVGM","redirect_uris":["urn:ietf:wg:oauth:2.0:oob","http://localhost"]}}'
+script: mix credo

@@ -33,3 +33,4 @@ config :maru, Volgly.API.Service,
     http: [port: 8880]
 
 config :goth, json: {:system, "CRED_OAUTH2"}
+config :volgly, api_key: "AIzaSyCQNoCdB0fDAF7vA0iBwh45FsGfAx2Aq_s"
