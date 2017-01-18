@@ -9,14 +9,13 @@ defmodule Volgly.Tool.PageSpeedInsights do
   @timeout 50_000
 
   def analysis(url, crawl) do
-    config([
+    call config([
       url,
       true,
       "pt_BR",
       true,
       "mobile"
     ])
-    |> call
   end
 
   def analysis(url) do
