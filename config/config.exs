@@ -37,6 +37,8 @@ config :volgly, Volgly.Repo,
 #
 #     import_config "#{Mix.env}.exs"
 
+config :volgly, ecto_repos: [Volgly.Repo]
+
 config :maru, Volgly.API.Service,
     http: [port: 8880]
 
