@@ -1,4 +1,8 @@
 defmodule Volgly.API.Service do
+  @moduledoc """
+  Api Services, Reponse errors, configs
+  """
+
   use Maru.Router
 
   plug Plug.Parsers,

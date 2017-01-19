@@ -1,0 +1,347 @@
+{
+ "kind": "pagespeedonline#result",
+ "id": "https://www.googleapis.com/auth/pubsub",
+ "responseCode": 200,
+ "title": "",
+ "ruleGroups": {
+  "SPEED": {
+   "score": 100
+  },
+  "USABILITY": {
+   "score": 67
+  }
+ },
+ "pageStats": {
+  "numberResources": 1,
+  "numberHosts": 1,
+  "totalRequestBytes": "51",
+  "textResponseBytes": "348"
+ },
+ "formattedResults": {
+  "locale": "pt_BR",
+  "ruleResults": {
+   "AvoidLandingPageRedirects": {
+    "localizedRuleName": "Evitar redirecionamentos da página de destino",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Sua página não tem redirecionamentos. Saiba mais sobre {{BEGIN_LINK}}como evitar os redirecionamentos da página de destino{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/AvoidRedirects"
+      }
+     ]
+    }
+   },
+   "AvoidPlugins": {
+    "localizedRuleName": "Evitar plug-ins",
+    "ruleImpact": 0.0,
+    "groups": [
+     "USABILITY"
+    ],
+    "summary": {
+     "format": "Parece que sua página não usa plug-ins, o que previne o uso de conteúdos em muitas plataformas. Saiba mais sobre a importância de {{BEGIN_LINK}}evitar plug-ins{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/AvoidPlugins"
+      }
+     ]
+    }
+   },
+   "ConfigureViewport": {
+    "localizedRuleName": "Configure o visor",
+    "ruleImpact": 10.0,
+    "groups": [
+     "USABILITY"
+    ],
+    "summary": {
+     "format": "Não há um visor especificado para sua página. Isso faz com que os dispositivos móveis processem sua página da mesma forma que ela apareceria em uma navegador da área de trabalho, diminuindo seu tamanho para caber em uma tela de dispositivo móvel. Configure um visor para permitir que sua página seja processada de forma adequada em todos os dispositivos."
+    },
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "{{BEGIN_LINK}}Configure um visor{{END_LINK}} para esta página.",
+       "args": [
+        {
+         "type": "HYPERLINK",
+         "key": "LINK",
+         "value": "https://developers.google.com/speed/docs/insights/ConfigureViewport"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "EnableGzipCompression": {
+    "localizedRuleName": "Ativar compactação",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Você ativou a compactação. Saiba mais sobre {{BEGIN_LINK}}como ativar a compactação{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/EnableCompression"
+      }
+     ]
+    }
+   },
+   "LeverageBrowserCaching": {
+    "localizedRuleName": "Aproveitar cache do navegador",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Você ativou o armazenamento em cache do navegador. Saiba mais sobre {{BEGIN_LINK}}as recomendações para o armazenamento em cache do navegador{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/LeverageBrowserCaching"
+      }
+     ]
+    }
+   },
+   "MainResourceServerResponseTime": {
+    "localizedRuleName": "Reduzir o tempo de resposta do servidor",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Seu servidor respondeu rapidamente. Saiba mais sobre a {{BEGIN_LINK}}otimização do tempo de resposta do servidor{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/Server"
+      }
+     ]
+    }
+   },
+   "MinifyCss": {
+    "localizedRuleName": "Compactar CSS",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Sua CSS está reduzida. Saiba mais sobre {{BEGIN_LINK}}como reduzir a CSS{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+      }
+     ]
+    }
+   },
+   "MinifyHTML": {
+    "localizedRuleName": "Compactar HTML",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Seu HTML está reduzido. Saiba mais sobre {{BEGIN_LINK}}como reduzir o HTMLl{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+      }
+     ]
+    }
+   },
+   "MinifyJavaScript": {
+    "localizedRuleName": "Compactar JavaScript",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Seu conteúdo JavaScript está reduzido. Saiba mais sobre {{BEGIN_LINK}}como reduzir o JavaScript{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+      }
+     ]
+    }
+   },
+   "MinimizeRenderBlockingResources": {
+    "localizedRuleName": "Eliminar JavaScript e CSS de bloqueio de renderização no conteúdo acima da borda",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Você não tem recursos de bloqueio de processamento. Saiba mais sobre {{BEGIN_LINK}}como remover os recursos de bloqueio de processamento{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/BlockingJS"
+      }
+     ]
+    }
+   },
+   "OptimizeImages": {
+    "localizedRuleName": "Otimizar imagens",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Suas imagens estão otimizadas. Saiba mais sobre {{BEGIN_LINK}}como otimizar as imagens{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/OptimizeImages"
+      }
+     ]
+    }
+   },
+   "PrioritizeVisibleContent": {
+    "localizedRuleName": "Priorizar o conteúdo visível",
+    "ruleImpact": 0.0,
+    "groups": [
+     "SPEED"
+    ],
+    "summary": {
+     "format": "Você tem conteúdo acima da dobra com a prioridade correta. Saiba mais sobre {{BEGIN_LINK}}como priorizar o conteúdo visível{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent"
+      }
+     ]
+    }
+   },
+   "SizeContentToViewport": {
+    "localizedRuleName": "Dimensionar o conteúdo para se ajustar à janela de visualização",
+    "ruleImpact": 0.0,
+    "groups": [
+     "USABILITY"
+    ],
+    "summary": {
+     "format": "Os conteúdos da sua página se ajustam à janela de visualização. Saiba mais sobre {{BEGIN_LINK}}como dimensionar o conteúdo para se ajustar à janela de visualização{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/SizeContentToViewport"
+      }
+     ]
+    }
+   },
+   "SizeTapTargetsAppropriately": {
+    "localizedRuleName": "Tamanho apropriado dos pontos de toque",
+    "ruleImpact": 0.0,
+    "groups": [
+     "USABILITY"
+    ],
+    "summary": {
+     "format": "Todos os links/botões da sua página são grandes o suficiente para que um usuário toque com facilidade no touchscreen. Saiba mais sobre o {{BEGIN_LINK}}tamanho apropriado dos pontos de toque{{END_LINK}}.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/SizeTapTargetsAppropriately"
+      }
+     ]
+    }
+   },
+   "UseLegibleFontSizes": {
+    "localizedRuleName": "Use tamanhos de fonte legíveis",
+    "ruleImpact": 40.0,
+    "groups": [
+     "USABILITY"
+    ],
+    "summary": {
+     "format": "A maneira que o seguinte texto na sua página é processado dificulta a leitura de alguns visitantes. {{BEGIN_LINK}}Use tamanhos de fonte legíveis{{END_LINK}} para fornecer uma melhor experiência do usuário.",
+     "args": [
+      {
+       "type": "HYPERLINK",
+       "key": "LINK",
+       "value": "https://developers.google.com/speed/docs/insights/UseLegibleFontSizes"
+      }
+     ]
+    },
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "Os seguintes fragmentos de texto têm tamanhos pequenos de fonte. Aumente o tamanho da fonte para tornar os fragmentos legíveis."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "{{TEXT_SNIPPET}} é processado com somente {{HEIGHT}} pixels de altura ({{CSS_HEIGHT}} pixels em CSS) {{SCREENSHOT}}.",
+         "args": [
+          {
+           "type": "STRING_LITERAL",
+           "key": "TEXT_SNIPPET",
+           "value": "pubsub&lt;script…39;&quot;&gt;&lt;/script&gt;"
+          },
+          {
+           "type": "INT_LITERAL",
+           "key": "HEIGHT",
+           "value": "6"
+          },
+          {
+           "type": "INT_LITERAL",
+           "key": "CSS_HEIGHT",
+           "value": "16"
+          },
+          {
+           "type": "SNAPSHOT_RECT",
+           "key": "SCREENSHOT",
+           "value": "final",
+           "rects": [
+            {
+             "left": 8,
+             "top": 8,
+             "width": 818,
+             "height": 18
+            }
+           ]
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "version": {
+  "major": 1,
+  "minor": 15
+ },
+ "screenshot": {
+  "mime_type": "image/jpeg",
+  "data": "_9j_4AAQSkZJRgABAQAAAQABAAD_2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj_2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj_wAARCAI4AUADASIAAhEBAxEB_8QAGwABAQADAQEBAAAAAAAAAAAAAAUCAwYEAQj_xAAwEAEAAgIBAgYBAwMDBQAAAAAAAQIDEQQSIQUGEzFBUWEUIoEjMnEVFpFCUrHB4f_EABQBAQAAAAAAAAAAAAAAAAAAAAD_xAAUEQEAAAAAAAAAAAAAAAAAAAAA_9oADAMBAAIRAxEAPwD9K-I-N8fgcz9Nlx5rX9L1ZmkRMRXcx977an40n0828Wb6txuX02yUx1tSnVH74iYmfr31_wCN99dF6dPUnJ0165jpm2u-vrf8yy0Dn6eZ-Pk5dcOPi8q-4t_bXdotXUzXp_n4-Yn_AC-08zcecuTFbj8mMmOKTPaOmer21aZiPx3137L-jQImXzFxscTa-PLWsWz11PT1WnFEzbURP47b03-FeM4_EuRkx48GXH00retrzX98T8xqZ7bjW_ZSyUrkpal6xalomJrMbiYn4mGURr2BEp5k418t8deNzOqme_HmJxx71rNpmO_eNR213n6Z08Yy8nHM8Hw_kZbzinJjm9q1x2neumbxMxE_8rADn8nmfBh5eTj5uNyIvXJjwx0x1dV7TaP4iJiO8_ExPs2YPMvFyRxYtiz0y58Fs_R0xPRFYmZra0TqJ7T8_C5o0CJyfMnDwc_Jw5x8i2WmSuOZrTtM2i09pmY3_bPaO_t9teLzPxc2L1aUvWk4cuaOuYiZ6IrOoiNxO-qfn4mF22OlrUtasTak7rMx7TrXb67TJjx0x460x1ilKxqK1jURH4gEXk-ZOHxsd75KZ7Up0fupWLdXVETGo3vWp3vWu0vuLzDhtTFOTFkx2vGbeOZi14nH7xqJ91vQCJj8w4c-b0MHHzzmmtZpF4iK2mentuJn2i0TM61rett3F8bw8m-euPByf6OS2O9ppGtx8737fU__AFVAc_8A7p4vpxb9Lzu-GmeI9OO8XtERG963379_v6fcHmfj5efXjV43K1fJXHS8U3EzaJnc_wDbHb57_OtL4CLfzDgr4THiM8XmTgnFGX9uOLTqZ18TrfzrbXbzRwq3mt8XKrPq0xR_T3vqnW-0-0fO9L2jQOanzdxrY6zg4nLva-KctImsRW0Rrt1RMxvv_wCuz04_MfHyXwVx8fk6yZKY5taK1inVEzEzufxr87jW1rHSuOlaY6xWlYiK1rGoiPqIZAjeIeYeNxMVL46ZOTF8WbLT0o31enG5rH5nU6_w8OHzPmycXFl_03JF74cWacXXPXXrnXTMa943_P8Azrp9AI_L8wcbi5K0th5V-qc0dWPH1V_pxu253qPbUNfH8xYuRyq4cXE5U7xWyT-2JtExaK61E9_ee_t2-e-rhoEDJ5gvTmzgjidcRyPQ6q5N_wDTE79vfv7PJyPN9cPhWTkzwM-TkV408iMGKerqj1OjUTrv9_4dUaBAp49mtyq4f0Np3lxYrTGTc066zPeNe8a7x_L15PFMno05ODjRk4c47XnJOWK23E6iIrqd7799_X2qAJVPF_UydFeLmpbqiOnLHTbXTNptr6iO35ns8mHzTxMvD_U143MikYrZZrala2iKzMTGpnvO4-Pxv3dAAi5vMPHwZbY8mPJN4zUw9FOmbRa2Prj5_Ex233hs8O8Zjm_pdcbLT162mYmYtOKa-8W1MxH17-_ZUtjpa1LWrE2pO6zMbmJ1rt9dplloAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH_2Q==",
+  "width": 320,
+  "height": 568,
+  "page_rect": {
+   "left": 0,
+   "top": 0,
+   "width": 980,
+   "height": 1741
+  }
+ }
+}
