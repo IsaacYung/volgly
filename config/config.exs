@@ -32,5 +32,5 @@ use Mix.Config
 config :maru, Volgly.API.Service,
     http: [port: 8880]
 
-config :goth,
-  json: "config/cred.json" |> File.read!
+config :goth, json: {:system, "CRED_OAUTH2"}
+config :volgly, api_key: System.get_env("API_KEY")

@@ -1,15 +1,10 @@
 defmodule Volgly.API.Router.Homepage do
+  @moduledoc """
+  Routes with endpoints for Volgly API
+  """
   use Maru.Router
 
   get "/foo/bar" do
-    json(conn, %{ hello: "Vai na fé" })
-  end
-
-  get "/togo" do
-    json(conn, %{ hello: "Torga" })
-  end
-
-  get "/promo" do
-    json(conn, %{ hello: "Progma" })
+    json(conn, %{hello: "Vai na fé"})
   end
 end
