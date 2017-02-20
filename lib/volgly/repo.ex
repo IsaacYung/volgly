@@ -3,5 +3,6 @@ defmodule Volgly.Repo do
   Database Repository
   """
 
-  use Ecto.Repo, otp_app: :volgly
+  use Ecto.Repo,
+    otp_app: :volgly
 end
