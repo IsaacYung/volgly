@@ -29,8 +29,8 @@ defmodule Volgly.Tool.PageSpeedInsights do
   end
 
   defp save_analysis(response_test, test_id) do
-    IO.inspect  Poison.Parser.parse!(response_test.body)
-    PageSpeedTest.changeset(%PageSpeedTest{}, %{response_test: response_test.body, response_status: response_test.status_code, test_id: test_id+1})
+    response_parsed = Poison.Parser.parse!(response_test.body)
+    PageSpeedTest.changeset(%PageSpeedTest{}, %{response_test: response_parsed, response_status: response_test.status_code, test_id: test_id+1})
   end
 
   defp call(url_request_params) do
