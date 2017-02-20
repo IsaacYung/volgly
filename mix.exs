@@ -14,7 +14,7 @@ defmodule Volgly.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :httpoison, :maru, :goth]]
+    [applications: [:logger, :httpoison, :maru, :goth, :ecto, :postgrex], mod: {Volgly, []}]
   end
 
   # Dependencies can be Hex packages:
@@ -29,9 +29,12 @@ defmodule Volgly.Mixfile do
   defp deps do
     [
       {:credo, "~> 0.3", only: [:dev, :test]},
-      {:httpoison, "~> 0.9.0"},
-      {:goth, "~> 0.2.1"},
-      {:maru, "~> 0.11"}
+      {:httpoison, "~> 0.11.0"},
+      {:goth, "~> 0.3.0"},
+      {:maru, "~> 0.11"},
+      {:ecto, "~> 2.1"},
+      {:postgrex, ">= 0.0.0"},
+      {:poison, "~> 2.1"}
     ]
   end
 end
